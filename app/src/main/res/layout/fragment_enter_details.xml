@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationfragments.EnterDetailsFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/studentId"
+            android:hint="Student ID"
+            android:layout_width="match_parent"
+            android:layout_marginTop="75dp"
+            android:scrollHorizontally="true"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/studentName"
+            android:hint="Student Name"
+            android:layout_width="match_parent"
+            android:layout_margin="25dp"
+            android:scrollHorizontally="true"
+            android:textSize="24sp"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/studentDepartment"
+            android:hint="Student Department"
+            android:layout_width="match_parent"
+            android:scrollHorizontally="true"
+            android:textSize="24sp"
+            android:inputType="textCapCharacters"
+            android:layout_margin="25dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/studentCurrentYear"
+            android:hint="Student Year"
+            android:layout_width="match_parent"
+            android:scrollHorizontally="true"
+            android:textSize="24sp"
+            android:inputType="number"
+            android:layout_margin="25dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:text="Next"
+            android:width="120dp"
+            android:padding="10dp"
+            android:textSize="22sp"
+            android:layout_margin="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>

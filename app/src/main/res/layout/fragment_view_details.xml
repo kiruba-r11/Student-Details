@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationfragments.ViewDetailsFragmentUsingBundle">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/studentIdTV"
+            android:text="Student ID"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="75dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/setStudentIdTV"
+            android:hint="Student ID"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/studentNameTV"
+            android:gravity="center"
+            android:text="Student Name"
+            android:layout_width="match_parent"
+            android:layout_margin="25dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/setStudentNameTV"
+            android:gravity="center"
+            android:hint="Student Name"
+            android:layout_width="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/studentDepartmentTV"
+            android:text="Student Department"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:layout_margin="25dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/setStudentDepartmentTV"
+            android:hint="Student Department"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/studentCurrentYearTV"
+            android:text="Student Year"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:layout_margin="25dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/setStudentCurrentYearTV"
+            android:hint="Student Year"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

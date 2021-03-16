@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/enterDetailsFragment">
+
+    <fragment
+        android:id="@+id/enterDetailsFragment"
+        android:name="com.example.studentdetails.navigationfragments.EnterDetailsFragment"
+        android:label="fragment_enter_details"
+        tools:layout="@layout/fragment_enter_details" >
+        <action
+            android:id="@+id/action_enterDetailsFragment_to_selectDataPassingFragment"
+            app:destination="@id/selectDataPassingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDataPassingFragment"
+        android:name="com.example.studentdetails.navigationfragments.SelectDataPassingFragment"
+        android:label="fragment_select_data_passing"
+        tools:layout="@layout/fragment_select_data_passing" >
+        <action
+            android:id="@+id/action_selectDataPassingFragment_to_viewDetailsFragmentUsingBundle"
+            app:destination="@id/viewDetailsFragmentUsingBundle" />
+        <action
+            android:id="@+id/action_selectDataPassingFragment_to_viewDetailsFragmentUsingSafeArgs"
+            app:destination="@id/viewDetailsFragmentUsingSafeArgs" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewDetailsFragmentUsingBundle"
+        android:name="com.example.studentdetails.navigationfragments.ViewDetailsFragmentUsingBundle"
+        android:label="fragment_view_details"
+        tools:layout="@layout/fragment_view_details" />
+    <fragment
+        android:id="@+id/viewDetailsFragmentUsingSafeArgs"
+        android:name="com.example.studentdetails.navigationfragments.ViewDetailsFragmentUsingSafeArgs"
+        android:label="fragment_view_details_using_safe_args"
+        tools:layout="@layout/fragment_view_details_using_safe_args" >
+
+        <argument android:name="id"
+            android:defaultValue='""'
+            app:argType="string"/>
+        <argument android:name="name"
+            android:defaultValue='""'
+            app:argType="string"/>
+        <argument android:name="dept"
+            android:defaultValue='""'
+            app:argType="string"/>
+        <argument android:name="year"
+            android:defaultValue='""'
+            app:argType="string"/>
+
+    </fragment>
+</navigation>
